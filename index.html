@@ -6,7 +6,7 @@
     <title>Você aceita namorar comigo?</title>
 </head>
 <body>
-    <div id="conteudo">
+    <div class="conteudo">
 <h2 class="titulo">Você aceita namorar comigo?</h2>
 <button class="btn" onclick="sim()">SIM</button>
 <button class="btn" onclick="desvia(this)">NÃO</button>
@@ -16,13 +16,7 @@
 </body>
 
 <style>
-    #conteudo {
-    background-image: url("339224_10150461033754078_913931857_o.jpg");
-    background-position: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    .conteudo {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -36,6 +30,14 @@
 
 }
 
+.conteudo {
+    background-image: url("339224_10150461033754078_913931857_o.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 
 .btn {
@@ -64,7 +66,7 @@
         console.log("TÁ DOIDA? É PRA ACEITAR.");
     }
 
-randomNumber(0, 100)
+geraPosicao(0, 100)
 
 function geraPosicao(min, max) {
     return (Math.random() * (max - min) + min) + '%';
